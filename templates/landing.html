@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find Grass – Landing</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+  <header>FIND GRASS</header>
+  <main class="hero">
+    <h1>Stop being a loser</h1>
+    <p>Go outside, and take a break before you need it.</p>
+    <!-- Call-to-action button links to the capture page -->
+    <button class="btn btn-primary" onclick="window.location.href='{{ url_for('capture') }}'">
+      Touch Grass
+    </button>
+  </main>
+</body>
+</html>

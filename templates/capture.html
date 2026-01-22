@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find Grass – Detect</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+  <header>Find GRASS</header>
+  <main>
+    <div class="video-container">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <div id="message"></div>
+    <button class="btn btn-secondary" id="detectButton">Detect Grass</button>
+    <!-- Home button to return to the landing page -->
+    <div class="home-link">
+      <button class="btn btn-white" onclick="window.location.href='{{ url_for('landing') }}'">Home</button>
+    </div>
+  </main>
+  <script src="{{ url_for('static', filename='js/capture.js') }}"></script>
+</body>
+</html>
