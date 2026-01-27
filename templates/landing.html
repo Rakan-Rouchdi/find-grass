@@ -8,13 +8,17 @@
 </head>
 <body>
   <header>FIND GRASS</header>
+
   <main class="hero">
-    <h1>Stop being a loser</h1>
-    <p>Go outside, and take a break before you need it.</p>
-    <!-- Call-to-action button links to the capture page -->
-    <button class="btn btn-primary" onclick="window.location.href='{{ url_for('capture') }}'">
-      Touch Grass
-    </button>
+    <div class="hero-inner">
+      <h1>Stop being a loser</h1>
+      <p>Go outside, and take a break before you need it.</p>
+
+      <button class="btn btn-primary"
+        onclick="window.location.href='{{ url_for('capture') }}'">
+        Touch Grass
+      </button>
+    </div>
   </main>
 </body>
 </html>

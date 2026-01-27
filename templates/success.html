@@ -8,12 +8,17 @@
 </head>
 <body>
   <header>FIND GRASS</header>
-  <div class="success-container">
-    <h1>Grass is Grabbed.</h1>
-    <p>good job, come back tmrw for fresh air</p>
-    <button class="btn btn-secondary" onclick="window.location.href='{{ url_for('capture') }}'">
-      Touch More Grass
-    </button>
-  </div>
+
+  <main>
+    <div class="success-container">
+      <h1>Grass is Grabbed.</h1>
+      <p>Good job, come back tomorrow for fresh air.</p>
+
+      <button class="btn btn-secondary"
+        onclick="window.location.href='{{ url_for('capture') }}'">
+        Touch More Grass
+      </button>
+    </div>
+  </main>
 </body>
 </html>
