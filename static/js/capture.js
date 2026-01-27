@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   startCamera({
     video: {
-      facingMode: { ideal: 'environment' },
-      aspectRatio: 9 / 16
-    }
-  });
+      facingMode: { ideal: "environment" }
+    },
+    audio: false
+  });  
 
   // --- Load MobileNet once ---
   let model = null;
