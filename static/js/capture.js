@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const ctx = canvas.getContext('2d', { willReadFrequently: true });
       ctx.drawImage(video, 0, 0, targetW, targetH);
 
-      message.textContent = 'Thinking... 🤖🌿';
+      message.textContent = '';
 
       // Run MobileNet on the canvas
       const predictions = await model.classify(canvas);
